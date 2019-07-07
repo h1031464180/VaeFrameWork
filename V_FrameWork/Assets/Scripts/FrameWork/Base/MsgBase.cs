@@ -14,7 +14,11 @@ namespace Vae
             int tmpId = msgId / ManagerId.msgSpan;
             return (ManagerID)(tmpId * ManagerId.msgSpan);
         }
+        public MsgBase()
+        {
 
+
+        }
         public MsgBase(ushort tmpId)
         {
             msgId = tmpId;

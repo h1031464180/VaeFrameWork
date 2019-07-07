@@ -28,7 +28,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -37,7 +37,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -163,15 +163,26 @@
     <Compile Include="Assets\protobuf-net\ServiceModel\XmlProtoSerializer.cs" />
     <Compile Include="Assets\protobuf-net\SubItemToken.cs" />
     <Compile Include="Assets\protobuf-net\WireType.cs" />
+    <Compile Include="Assets\Scripts\Debugger\Debugger.cs" />
     <Compile Include="Assets\Scripts\FrameWork\Base\ManagerBase.cs" />
     <Compile Include="Assets\Scripts\FrameWork\Base\ManagerId.cs" />
     <Compile Include="Assets\Scripts\FrameWork\Base\MonoBase.cs" />
     <Compile Include="Assets\Scripts\FrameWork\Base\MsgBase.cs" />
     <Compile Include="Assets\Scripts\FrameWork\Extension\Extension.cs" />
+    <Compile Include="Assets\Scripts\FrameWork\FunctionBase\NetTcpBase.cs" />
+    <Compile Include="Assets\Scripts\FrameWork\FunctionBase\NetUdpBase.cs" />
     <Compile Include="Assets\Scripts\FrameWork\FunctionBase\UIBase.cs" />
     <Compile Include="Assets\Scripts\FrameWork\Manager\MsgCenter.cs" />
     <Compile Include="Assets\Scripts\FrameWork\Manager\NetManager.cs" />
     <Compile Include="Assets\Scripts\FrameWork\Manager\UIManager.cs" />
+    <Compile Include="Assets\Scripts\FrameWork\Net\TcpSocket\NetMsgBase.cs" />
+    <Compile Include="Assets\Scripts\FrameWork\Net\TcpSocket\NetSocket.cs" />
+    <Compile Include="Assets\Scripts\FrameWork\Net\TcpSocket\NetSocketToWork.cs" />
+    <Compile Include="Assets\Scripts\FrameWork\Net\TcpSocket\SocketBuffer.cs" />
+    <Compile Include="Assets\Scripts\FrameWork\Net\TcpSocket\TcpSocket.cs" />
+    <Compile Include="Assets\Scripts\FrameWork\Net\UDPSocket\UDPSocket.cs" />
+    <Compile Include="Assets\Scripts\Function\UdpSocketPanel.cs" />
+    <Compile Include="Assets\Scripts\Tools\IProtoTool.cs" />
     <None Include="Assets\smcs.rsp" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/GitProject/V_FrameWork/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
